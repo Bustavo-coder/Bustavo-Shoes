@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+   <img src="./images/logo.svg" alt="">
+    <ul class="navigation">
+      <li><a href="">Collections</a></li>
+      <li><a href="">Men</a></li>
+      <li><a href="">Women</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="icon">
+    <div class="counter-container"><p class="counter">0</p></div>
+    <img src="./images/icon-cart.svg" alt="" width="30px" class="carti">
+    <img src="./images/image-avatar.png" alt="" width="30px">
+    </div>
+  </div>
+  <section class="breadcrumb">
+    <div class="left">
+    <img src="./images/image-product-1.jpg" alt="" class="img">
+      <div class="down">
+        <img src="./images/image-product-2.jpg" alt="">
+        <img src="./images/image-product-3.jpg" alt="">
+        <img src="./images/image-product-4.jpg" alt="">
+        <img src="./images/image-product-4.jpg" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <img src="./images/logo.svg" alt="">
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p> 
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  <h3>$125.00 <span class="per">50%</span></h3>
+  <h4>$250.00</h4>
+  <form action="">
+     <p class="cart"><input type="number" class="value" required></p>
+  <div class="button">
+    <img src="./images/icon-cart.svg" alt="" width="30px"><p>Add To Cart</p>
+  </button>
+  </form>
+ 
+  </section>
+  <div class="modal">
+    <h1>Cart</h1>
+    <p class="empty">Your CART Is Empty</p>
+    <div class="product">
+      <div>
+      <img src="./images/image-product-1.jpg" alt="" width="50px">
+      <h2>Fall limited edition Sneakers</h2>
+      <img src="./images/icon-delete.svg" alt="" width="20px" class="delete">
+      </div>
+      <button class="bot">Checkout</button>
+      <p>$125.00 * <span class="quantity">3</span> <strong class="total">  $375.00</strong></p>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bustavo-coder@github.com</a>
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

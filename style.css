@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    border-bottom: 1px solid black;
+    margin: 50px;
+    margin-top: 10px;
+}
+.header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color:#d86711;
+}
+.navbar{
+    display:none ;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-top: 5px;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header li{
+    list-style-type: none;
+}
+.header a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.436);
+    font-size: 15px;
+}
+.header a:hover{
+    transition: all 0.5s;
+    border-bottom: 3px solid #d86711;
+}
+.icon img{
+    margin-left: 15px;
+}
+.icon div{
+    width: 20px;
+    background-color:#ef6d0a;
+    position: absolute;
+    border-radius: 500px;
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    
+}
+.breadcrumb{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    margin: 50px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.445);
+
+}
+.breadcrumb >div{
+    width: 49%;
+}
+.left{
+    padding: 5%;
+    align-items: center;
+    text-align: center;
+}
+.img{
+    width:80% ;
+    border-radius: 15px;
+}
+.down{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.down img{
+    width: 22%;
+    border-radius: 10px;
+}
+.down img:hover{
+     transition: all 0.5s;
+    border: 5px solid#d86711;
+    opacity: 0.8;
+}
+.right{
+    padding: 7%;
+    text-align: left;
+}
+.right h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.532);
+    margin-bottom: 10px;
+}
+.right h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.right p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.578);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.right h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: black;
+    margin-bottom:10px;
+}
+.per{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    align-items: center;
+}
+.right h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.578);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: line-through;
+}
+.cart{
+    width: 100%;
+    padding: 10px;
+    background-color: #cfc5b8;
+    text-align: center;
+}
+.cart input{
+    all: unset;
+    width:80%;
+    background-color: white;
+    padding: 5px;
+}
+
+.button{
+    all: unset;
+    width: 80%;
+    background-color:#f1791dd0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.button p{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 900;
+}
+.button p:hover{
+    transition: all 0.5s;
+}
+.modal{
+    width: 25%;
+    background-color:white;
+    margin: auto;
+    padding: 2%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 180px;
+    height: auto;
+    margin-right: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.795);
+}
+.hidden{
+    display: none;
+}
+.modal h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    border-bottom:1px solid black ;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.modal p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin:  30px 20px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+.product{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+
+}
+.product div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+.product div h2{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.product div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+.product div img{
+    border-radius: 10px;
+}
+.bot{
+    all: unset;
+    width: 80%;
+    background-color: #ef4f0a;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+@media screen and (max-width:900px) {
+    .header{
+        margin: auto;
+        align-items: center;
+    }
+    .header h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .header ul{
+        display: none;
+        flex-direction: column;
+    }
+    .navbar{
+        display: block;
+    }
+    .active{
+        display: block;
+        flex-direction: column;
+    }
+    .breadcrumb{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .breadcrumb >div{
+        width: 100%;
+        margin: auto;
+    }
+    .left{
+        margin: auto;
+    }
+    .down{
+        display: none;
+    }
+    .cart{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .cart input{
+        width: 80%;
+    }
+    .right h3{
+        text-align: center;
+    }
+    .right h4{
+        text-align: center;
+    }
+    .button{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    .modal{
+        width: 70%;
+    }
+}
