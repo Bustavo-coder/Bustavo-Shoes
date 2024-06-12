@@ -4,16 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/image-product-1.jpg">
   <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Sneaklin Shoes | E-commerce product page</title>
 </head>
 <body>
   <div class="header">
@@ -24,6 +17,7 @@
     </div>
    <img src="./images/logo.svg" alt="">
     <ul class="navigation">
+      <img src="./images/icon-close.svg" alt="" class="close">
       <li><a href="">Collections</a></li>
       <li><a href="">Men</a></li>
       <li><a href="">Women</a></li>
@@ -38,7 +32,19 @@
   </div>
   <section class="breadcrumb">
     <div class="left">
-    <img src="./images/image-product-1.jpg" alt="" class="img">
+      <div class="slider">
+        <div class="box">
+          <img src="./images/image-product-1.jpg" alt="" class="slides">
+       <img src="./images/image-product-2.jpg" alt="" class="slides">
+        <img src="./images/image-product-3.jpg" alt="" class="slides">
+        <img src="./images/image-product-4.jpg" alt="" class="slides">
+        </div>
+        <div class="buttom">
+          <img src="./images/icon-previous.svg" alt="" width="30px" class="prev">
+          <img src="./images/icon-next.svg" alt="" width="30px" class="next">
+        </div>
+       
+      </div>
       <div class="down">
         <img src="./images/image-product-2.jpg" alt="">
         <img src="./images/image-product-3.jpg" alt="">

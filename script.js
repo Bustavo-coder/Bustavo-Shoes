@@ -14,18 +14,25 @@ const Pdelete = document.querySelector(".delete")
 const quantity = document.querySelector(".quantity")
 const total = document.querySelector(".total")
 const counterConatainer = document.querySelector(".counter-container");
-
+const slide = document.querySelectorAll(".slides")
+const close = document.querySelector(".close")
+const prev = document.querySelector(".prev")
+const next = document.querySelector(".next")
 const active = () => {
     navigation.classList.toggle("active")
+
 }
 
 navbar.addEventListener("click", active)
+
+close.addEventListener("click", active)
+
 
 const showModal = function () {
     modal.classList.toggle("hidden")
 }
 
-// Hidde Modal
+// Hidde Modal declaring the function
 showModal()
 
 // hidenocart and display product
@@ -58,7 +65,6 @@ document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
         showModal()
         hideCart()
-
     }
 })
 
@@ -67,6 +73,7 @@ document.addEventListener("keydown", function (e) {
 
 button.addEventListener("click", function () {
     hideCart()    
+    
 })
 
 // deleting cart
@@ -76,5 +83,28 @@ Pdelete.addEventListener("click", function () {
     empty.classList.remove("hidden")
     value.value = 0
 })
+
+// slider logic
+
+let slideindex = 0
+const hide = () => {
+    for (var i = 0; i < slide.length; i++){
+        slide[i].style.display = "none"
+    }
+}
+const showSlide = () => {
+    hide()
+    slideindex ++
+    if (slideindex > slide.length) {
+        slideindex = 1
+    }
+    slide[slideindex - 1].style.display = "block"
+    
+    setTimeout(showSlide, 6000)
+}
+prev.addEventListener("click", showSlide)
+next.addEventListener("click", showSlide)
+    
+showSlide()
 
 

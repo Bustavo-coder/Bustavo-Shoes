@@ -26,23 +26,33 @@
     background-color: black;
     margin-top: 5px;
 }
-.header ul{
+.navigation{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.header li{
+.navigation li{
     list-style-type: none;
 }
-.header a{
+.navigation a{
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(0, 0, 0, 0.436);
     font-size: 15px;
 }
-.header a:hover{
+.navigation a:hover{
     transition: all 0.5s;
     border-bottom: 3px solid #d86711;
+}
+.close{
+    display: none;
+}
+.close:hover{
+    transition: all 0.5s;
+    background-color: red;
+    transform: scale(1.5);
+    margin-bottom: 20px;
+
 }
 .icon img{
     margin-left: 15px;
@@ -73,19 +83,44 @@
     align-items: center;
     text-align: center;
 }
-.img{
+.slider{
+    display: flex;
+}
+.slides{
     width:80% ;
     border-radius: 15px;
+}
+.prev{
+    position: absolute;
+    left: 0;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.next{
+    margin-top: 100px;
 }
 .down{
     width: 100%;
     display:flex;
     justify-content: space-between;
     margin-top: 20px;
+   
 }
 .down img{
     width: 22%;
     border-radius: 10px;
+     animation-name: slide;
+    animation-duration:5s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    30%{
+        transform: translateX(-100%);
+        margin-left: 50px;
+
+    }
+   
 }
 .down img:hover{
      transition: all 0.5s;
@@ -250,21 +285,45 @@
         font-size: 20px;
         text-align: center;
     }
-    .header ul{
-        display: none;
+    .navigation{
         flex-direction: column;
+        display: none;
+        position:absolute;
     }
     .navbar{
         display: block;
     }
+    .close{
+        display: block;
+        margin-left: auto;
+        width: 30px;
+        padding: 5px;
+        
+    }
     .active{
         display: block;
         flex-direction: column;
+        background-color:white;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        height: 100vh;
+        margin-top: 500px;
+        text-align: left;
+        padding: 20px;
+        padding-top: 100px;
     }
+    .active li{
+        margin-bottom: 20px;
+    }
+    .active a{
+        color: black;
+        font-size:17px;
+    }
+   
     .breadcrumb{
         flex-direction: column;
         margin: auto;
-        align-items: center;
     }
     .breadcrumb >div{
         width: 100%;
@@ -297,5 +356,11 @@
     }
     .modal{
         width: 70%;
+    }
+    .prev{
+        margin-left:0;
+    }
+    .next{
+        margin-right: 20px;
     }
 }
